@@ -83,4 +83,3 @@ Since BBC Good food is a recipe website from England, most recipes in our datase
 From data exploration process, we found there were different units of measures in serving predictor such as people, gram or milliliter. Thus, user should be aware of this issue before running model and manually bin it into proper range. Besides, we could not judge the error by the number, since our scales are too small (from 0 to 5). We may need some domain knowledge to help us. To know how to define the benchmark, which would be valuable for our client. Besides, for other data mining projects regarding article data in the future, we would suggest them to know their data by playing and exploring them.
 
 
-
