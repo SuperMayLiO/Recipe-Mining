@@ -1,8 +1,5 @@
 # Knowledge Discovery of Cuisine between Europe Regions Using Network Analysis
 
-- ## Executive Summary
-
-
 ## 1. Introduction
 Food can be a large part of human’s lives. According to Choi (2014), what you want to cook and eat is an accumulation, a function of your experiences — the people you’ve dated, what you’ve learned, where you’ve gone. Therefore, this experiment is conducted to focus on Europe, trying to see whether there’re some common features between four regions’ cuisine.
 
@@ -36,7 +33,7 @@ to extract special symbols : “x” appearing alone meaning multiply(e.g. 2 x 7
 
 - #### Quantifying Ingredients and Classifying “many” or “few” Ingredients
 For those quantifiers hard to measure (e.g. handful, pack, etc.) and without units, although we can just assign handful to “few” because the recipe writer may not care the quantities, to satisfy our need later when building network, considering the serving are different among recipes, a “pack” can’t assign to “many” directly, so we give them a subjective quantities in order to standardize.  We will divide all measurements into two parts: “many” and “few” by whether the weight of an ingredient is bigger than the ingredient mean weight in a particular recipe to handle this problem easily. Table below shows the procedure and result. 
-![images](https://github.com/mayritaspring/Recipe-Mining/tree/master/Social%20Network%20Analysis/figures/table1.jpg)
+![images](https://github.com/mayritaspring/Recipe-Mining/tree/master/Social%20Network%20Analysis/figures/table1.PNG)
 
 To sum up, we scrap the data from website, BBC Good Food.com, obtaining a really “dirty” dataset. With series of manually data processing, we finally acquire a dataset, whose rows are ingredients (total ingredients =236), columns are recipe (total recipes =200), and the values inside are all “many” or “few”, which can fit the requirement to construct the following network.
 

@@ -18,7 +18,8 @@ Our analytics goal is to predict the average rating value of each new recipe, su
 
 ## 2. Data Preparation
 We used software “python” to crawl data from a recipe website, BBC Good Food. Additionally, we used software “R” to clean the data and converted to csv in order to run our models. Besides, all variables we collected were as Table below.
-![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table1.jpg)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table1.PNG)
+
 From cleaning processes (see Appendix A), we have 8,408 records, each record stands for a recipe, and there are 42 predictors (including all dummy variables we used) in the end (see Table below).
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table2.jpg)
 
