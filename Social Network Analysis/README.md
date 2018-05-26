@@ -36,6 +36,9 @@ For those quantifiers hard to measure (e.g. handful, pack, etc.) and without uni
 
 ![images](https://github.com/mayritaspring/Recipe-Mining/tree/master/Social%20Network%20Analysis/figures/table1.jpg)
 
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table1.jpg)
+
+
 To sum up, we scrap the data from website, BBC Good Food.com, obtaining a really “dirty” dataset. With series of manually data processing, we finally acquire a dataset, whose rows are ingredients (total ingredients =236), columns are recipe (total recipes =200), and the values inside are all “many” or “few”, which can fit the requirement to construct the following network.
 
 
