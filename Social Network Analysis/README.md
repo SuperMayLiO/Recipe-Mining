@@ -1,2 +1,15 @@
 # Knowledge Discovery of Cuisine between Europe Regions Using Network Analysis
 
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%872.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%873.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%874.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%875.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%876.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%877.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%878.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%879.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%8710.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%8711.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%8712.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%8713.JPG)
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/%E6%8A%95%E5%BD%B1%E7%89%8714.JPG)
