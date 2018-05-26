@@ -47,7 +47,9 @@ We also tried KNN method and imported all the variables to run the model, which 
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table4.jpg)
 
 ### Method 3.Multiple Linear Regression
-At the beginning, we imported all variables and selected "stepwise" variable selection to let XLMiner provided us suggestion (see Appendix C Table C.1) that what kind of predictors combination performed well. We choose subset#14, which CP value was mostly close to coefficient, to running the regression model again, and the performance is showing in Table below. Finally, we got our best model in regression:
+At the beginning, we imported all variables and selected "stepwise" variable selection to see what kind of predictors combination performed well. 
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/C.1.jpg)
+We choose subset#14, which CP value was mostly close to coefficient, to running the regression model again, and the performance is showing in Table below. Finally, we got our best model in regression:
 Y=0.00289*Saturates+0.02035*Salt+0.00086*Total_time+(0.10653)*Dinner+0.12083*Side_dish+(0.0977)*Afternoon_tea+(0.08404)*Supper+0.40145*Starter+0.06988*America+(0.05537)*Asia+0.03465*Europe+0.0933*Level_Moderately easy
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table5.jpg)
 
@@ -61,7 +63,14 @@ Speaking of comparing the error, the number of data is important. Here we had th
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table6.jpg)
 
 - ### Residual Evaluation 
-We plotted 3 histograms of different residuals: from original model (see Appendix D Figure D.1) from adjusted-log Y model (see Appendix D Figure D.2), and from adjusted- log Y model but transformed to original scale (see Appendix D Figure D.3). All are central with 0 but it shows that it has no big improvement after we adjusted the model by comparing figure D.1 and D.3. Therefore, we still choose the original regression model as our final model.
+According to 3 histograms of different residuals below. All are central with 0 but it shows that it has no big improvement after we adjusted the model by comparing first figure and third figure. Therefore, we still choose the original regression model as our final model.
+- ### 1.original model
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/D.1.jpg)
+- ### 2. adjusted-log Y model 
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/D.2.jpg)
+- ### 3. Adjusted- log Y model but transformed to original scale
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/D.3.jpg)
+
 
 ## 6. Conclusion 
 - ### Advantages
