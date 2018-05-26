@@ -18,8 +18,7 @@ Our analytics goal is to predict the average rating value of each new recipe, su
 
 ## 2. Data Preparation
 We used software “python” to crawl data from a recipe website, BBC Good Food. Additionally, we used software “R” to clean the data and converted to csv in order to run our models. Besides, all variables we collected were as Table below.
-![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table1.PNG)
-
+![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table1.jpg)
 From cleaning processes (see Appendix A), we have 8,408 records, each record stands for a recipe, and there are 42 predictors (including all dummy variables we used) in the end (see Table below).
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table2.jpg)
 
@@ -73,6 +72,5 @@ BBC Good food is able to acknowledge the average rating of recipe that they will
 Since BBC Good food is a recipe website from England, most recipes in our dataset are European cuisine (around 70 percent), and our model was built based on this dataset. As a result, our model is likely to work well only with European recipes. Moreover, scale of rating value was quite small, from 0 to 5, errors of prediction might not be reflected what it is in reality.   
 - ### Operational Recommendations
 From data exploration process, we found there were different units of measures in serving predictor such as people, gram or milliliter. Thus, user should be aware of this issue before running model and manually bin it into proper range. Besides, we could not judge the error by the number, since our scales are too small (from 0 to 5). We may need some domain knowledge to help us. To know how to define the benchmark, which would be valuable for our client. Besides, for other data mining projects regarding article data in the future, we would suggest them to know their data by playing and exploring them.
-
 
 
