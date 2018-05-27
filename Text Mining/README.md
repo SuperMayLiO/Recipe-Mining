@@ -1,4 +1,5 @@
 # Knowledge Discovery of Online Recipe Reviews Using Text Mining
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/cover.JPG)
 
 ## Abstract
 The goal is to discover and explore Europe recipe experience world. Therefore, this experiment is conducted to utilize critical incidence and K-means clustering analysis to create ontology. Firstly, collect recipe samples from four European regions to build the clusters of positive and negative recipe experience; however, there’s no special pattern in clusters for creating ontology. Secondly, build clusters of positive and negative recipe experience for Europe recipes; however, there’s just a little pattern for creating ontology. Finally, partitioning same samples into two categories, i.e. “Dish” and “Others” (dessert & salad & soup) of Europe recipes, and building 4 clusters of both positive and negative recipe experience and finding ideas to create ontology.
@@ -20,7 +21,7 @@ About recipe modification, transforming the core idea from Teng, Lin, and Adamic
 We try to use critical incident analysis to discover what BBC Good Food users experience when they followed these recipes previously, which is similar to Yan, and Zhang (2006), trying to apply this technique to build customer complaint ontology; therefore, this experiment is to focus on Europe recipes, building U.K. people’s recipe experience ontology. Furthermore, we use K-means clustering analysis with the key phrase dimensions (Trappey, Wu, and Liu, 2012) and discovering knowledge about what U.K. people experience in European recipes and how they feel about European cuisine!
 
 - ### Data preprocessing
-This experiment is conducted to collect and clean about 9000 recipes from website, BBC Good Food, through two software, Python and R; however, we only use 8331 recipes, which contain four European regions: Western Europe with 6499 recipes, Northern Europe with 130 recipes, Central Europe with 65 recipes, and Southern Europe with 1637 recipes because data resources from website, BBC Good Food.com, provided with less Eastern Europe recipes. Therefore, we only focus on four European regions. Moreover, randomly sampling 50 recipes from each region to prevent the problem that Northern Europe and Central Europe have few recipes. In sum, this experiment is conducted to use 200 samples from 8331 recipes to find out some interesting things in European cuisine world.
+This experiment is conducted to collect and clean about 9000 recipes from website, BBC Good Food, through two software, Python and R; however, we only use 8331 recipes, which contain four European regions: Western Europe with 6499 recipes, Northern Europe with 130 recipes, Central Europe with 65 recipes, and Southern Europe with 1637 recipes because data resources from website, BBC Good Food.com, provided with less Eastern Europe recipes. Therefore, we only focus on four European regions. Moreover, randomly sampling 50 recipes from each region to prevent the problem that Northern Europe and Central Europe have few recipes. In sum, this experiment is conducted to use 200 samples from 8331 recipes to find out some interesting things in European cuisine world ([link to R code](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/code/1.Prepare%20data.r)). 
 
 To build two kinds of attitude ontology, the first step in processing the recipes is defining positive part and negative part from comments of each European region recipes. We remove intermediate attitude, or the star ranking of reviewers were 2.5 stars (from decimal viewpoint), and 3 stars (from integer viewpoint) depending on total ranking, 5 stars. On one hand, regarding what’s greater than 3 stars as positive attitude for four European regions. On the other hand, regarding what’s less than 2.5 stars as negative attitude for four European regions. Besides, we put dialogues together if there’re the same reviewers for two attitudes!
 The next step in processing the recipes is to remove something meaningless, such as notation (e.g. -/), stop word, i.e. is a commonly used word (e.g. of, for, a, the), numbers, and space. Besides, also transform all words to small letter to distinguish repeated words.
@@ -30,7 +31,7 @@ Critical incident technique consists of a set of procedures for collecting direc
 ![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/table1.JPG)
 
 - ### Text Mining Analysis
-In order to extract the keywords from recipe reviews, this experiment is conducted to count the weights of words by following way. Utilizing the method proposed by Salton and Buckley (1988), we can calculate Term Frequency (TF) minus Inverse Document Frequency (IDF). TF is measuring number of times a word appears in a recipe review, and IDF is measuring number of times the word appears in all reviews, which are either positive dialogues or negative dialogues from four European regions mentioned before. This method was combined the idea of TF, proposed by Luhn (1957), with the idea of IDF, proposed by Jones, K. S. (1972). However, in order to solve the problem that the length of dialogue (i.e. recipe comments) will affect the weight of words, then use the method, Normalized Term Frequency (NTF) minus Inverse Document Frequency (IDF), proposed by Sedding, and Kazakov (2004). Therefore, in this experiment, we calculate NTF minus IDF to give appropriate weights of words, choosing top 50 words from top 100 words, using domain knowledge to pick vital or meaningful words manually.
+In order to extract the keywords from recipe reviews, this experiment is conducted to count the weights of words by following way ([link to R code](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/code/1.Text%20Mining.r)). Utilizing the method proposed by Salton and Buckley (1988), we can calculate Term Frequency (TF) minus Inverse Document Frequency (IDF). TF is measuring number of times a word appears in a recipe review, and IDF is measuring number of times the word appears in all reviews, which are either positive dialogues or negative dialogues from four European regions mentioned before. This method was combined the idea of TF, proposed by Luhn (1957), with the idea of IDF, proposed by Jones, K. S. (1972). However, in order to solve the problem that the length of dialogue (i.e. recipe comments) will affect the weight of words, then use the method, Normalized Term Frequency (NTF) minus Inverse Document Frequency (IDF), proposed by Sedding, and Kazakov (2004). Therefore, in this experiment, we calculate NTF minus IDF to give appropriate weights of words, choosing top 50 words from top 100 words, using domain knowledge to pick vital or meaningful words manually.
 
 - #### K-means clustering analysis. 
 Additionally, according to top 50 keywords selected, we then use K-means clustering analysis with the keyword dimensions (Trappey, Wu, &Liu, 2012). In other words, we desire to discover some patterns to help us build U.K. people’s recipe experience ontology. However, when utilizing K-means clustering, creating clusters to see whether there’re different patterns for positive and negative dialogues in four regions, the results show no special patterns to explain in each cluster (Figure.1~Figure.8). Moreover, because sample sizes for negative dialogues are too small in four European regions (Table.1), this experiment shows that there’re only ten keywords extracted from negative dialogues in four regions. Besides, we think that if people do not like the recipes, they won’t go back to comment on recipes they followed before. Therefore, we try to combine 200 samples of four European regions to see positive and negative recipe experience in Europe, finding keywords for recipe experience clustering! Besides, the number of positive dialogue is 1065, negative dialogue is 104 (see the dataset in appendix A). 
@@ -90,18 +91,36 @@ However, there’re some limitations for this research. Firstly, because we want
 
 ## References
 Ahn, Y., Ahnert, S., Bagrow, J., & Barabasi, A. (2011). Flavor network and the principles of food pairing. SCIENTIFIC REPORTS, 1-7, doi:10.1038/srep00196
+
 Flanagan, J. C. (1954) .Critical incident technique. Psychological Bulletin, 51(4), 327-358.
+
 Jones, K. S. (1972). A statistical interpretation of term specificity and its application in retrieval. Journal of Documentation, 28 (1), 11-20.
+
 Luhn, H. P. (1957). A statistical approach to mechanized encoding and searching of literary information. IBM Journal of Research and Development, 1(4), 309-317.
+
 Lee, C. C., & Hu, C. (2004). Analyzing hotel customers’ e-complaints from an Internet complaint forum. Journal of Travel and Tourism Marketing, 17(2, 3), 167-181. 
+
 Rese, A., Schreiber, S., & Baier, D. (2014). Technology acceptance modeling of augmented reality at the point of sale: Can surveys be replaced by an analysis of online reviews? Journal of Retailing and Consumer Services, 21, 869-876.
+
 Salton, G., & Buckley, C. (1988). Term-weighting approaches in automatic text retrieval, Journal of Information Processing and Management, 24(5), 513-523.
+
 Sedding, J., & Kazakov, D. (2004). Wordnet-based text document clustering. 3rd Workshop on Robust Methods in Analysis of Natural Language Data, 104-113.
+
 Teng, C.Y., Lin, Y.-R., & Adamic, L. A. (2012). Recipe recommendation using ingredient networks, Proc. 3rd Annual ACM Web Science Conference, 298-307.
+
 Trappey, C. V., Wu, H. Y., & Liu, K. L. (2012). Knowledge discovery of customer satisfaction and dissatisfaction using ontology-based text analysis of critical incident dialogues. Proceedings of the 2012 IEEE 16th International Conference: Computer Supported Cooperative Work in Design, 470-475.
+
 Yan, Y., & Zhang, J. (2006). Building Customer Complaint Ontology: Using OWL to Express Semantic Relations. International Conference on Management of Logistics and Supply Chain, 433-437.
 
 ## Appendix A (Dataset of Recipe Comments from Europe)
 ![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableA.1.JPG)
 ![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableA.2.JPG)
+
+## Appendix B (Dataset of Recipe Comments by Partition with Recipe Categories)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableB.1.JPG)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableB.2.JPG)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableB.3.JPG)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/tableB.4.JPG)
+
+
 
