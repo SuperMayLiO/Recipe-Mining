@@ -122,11 +122,15 @@ in desserts or dishes. On the other hand, olive oil, butter, and onions are more
 we can deal with these step by step in the future!
 
 ## 5. References
-### Ahn, Y., Ahnert, S., Bagrow, J., & Barabasi, A. (2011). Flavor network and the principles of food pairing. SCIENTIFIC REPORTS, 1-7, doi:10.1038/srep00196
-### Choi, A. S., (2014, December 18). What Americans can learn from other food cultures. IDEAS.TED.COM. Retrieved from http://ideas.ted.com/what-americans-can-learn-from-other-food-cultures/
-### Kular, D. K., Menezes, R. & Ribeiro, E. (2011).Using network analysis to understand the relation between cuisine and culture. Proc. 2011 IEEE 1st Int. Netw. Sci. Work.
-### McGee, H. (1984). On food and cooking—the science and lore of the kitchen. New York, NY: MacMillan.
-### Teng, C.-Y., Lin, Y.-R., & Adamic, L. A. (2012). Recipe recommendation using ingredient networks, Proc. 3rd Annual ACM Web Science Conference, 298–307.
+Ahn, Y., Ahnert, S., Bagrow, J., & Barabasi, A. (2011). Flavor network and the principles of food pairing. SCIENTIFIC REPORTS, 1-7, doi:10.1038/srep00196
+
+Choi, A. S., (2014, December 18). What Americans can learn from other food cultures. IDEAS.TED.COM. Retrieved from http://ideas.ted.com/what-americans-can-learn-from-other-food-cultures/
+
+Kular, D. K., Menezes, R. & Ribeiro, E. (2011).Using network analysis to understand the relation between cuisine and culture. Proc. 2011 IEEE 1st Int. Netw. Sci. Work.
+
+McGee, H. (1984). On food and cooking—the science and lore of the kitchen. New York, NY: MacMillan.
+
+Teng, C.-Y., Lin, Y.-R., & Adamic, L. A. (2012). Recipe recommendation using ingredient networks, Proc. 3rd Annual ACM Web Science Conference, 298–307.
 
 
 
