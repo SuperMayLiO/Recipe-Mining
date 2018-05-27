@@ -34,7 +34,7 @@ to extract special symbols : “x” appearing alone meaning multiply(e.g. 2 x 7
 - #### Quantifying Ingredients and Classifying “many” or “few” Ingredients
 For those quantifiers hard to measure (e.g. handful, pack, etc.) and without units, although we can just assign handful to “few” because the recipe writer may not care the quantities, to satisfy our need later when building network, considering the serving are different among recipes, a “pack” can’t assign to “many” directly, so we give them a subjective quantities in order to standardize.  We will divide all measurements into two parts: “many” and “few” by whether the weight of an ingredient is bigger than the ingredient mean weight in a particular recipe to handle this problem easily. Table below shows the procedure and result. 
 
-![Data Processing Procedure and Measurement](https://github.com/mayritaspring/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table1.png)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table1.png "Data Processing Procedure and Measurement")
 
 To sum up, we scrap the data from website, BBC Good Food.com, obtaining a really “dirty” dataset. With series of manually data processing, we finally acquire a dataset, whose rows are ingredients (total ingredients =236), columns are recipe (total recipes =200), and the values inside are all “many” or “few”, which can fit the requirement to construct the following network.
 
