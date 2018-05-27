@@ -1,4 +1,5 @@
 # Knowledge Discovery of Cuisine between Europe Regions Using Network Analysis
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/cover.jpeg)
 
 ## 1. Introduction
 Food can be a large part of human’s lives. According to Choi (2014), what you want to cook and eat is an accumulation, a function of your experiences — the people you’ve dated, what you’ve learned, where you’ve gone. Therefore, this experiment is conducted to focus on Europe, trying to see whether there’re some common features between four regions’ cuisine.

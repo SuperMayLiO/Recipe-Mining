@@ -1,0 +1,201 @@
+recipe ID,recipe,category
+1,Pork schnitzel,dish
+2,Orange & ginger stained glass biscuits,others
+3,Black Forest gateau,others
+4,Full of fibre,others
+5,Russian chicken & mushroom pies with soured cream & dill,dish
+6,Pot-roast pork goulash with potatoes & greens,dish
+7,Cheesy Swiss bake,dish
+8,Sausages with braised cabbage & caraway,dish
+9,German-style cheese & bacon pancakes,dish
+10,Piernik (Polish gingerbread),others
+11,Mushroom stroganoff,dish
+12,Shukhi ¡V warm beetroot & mushroom salad,others
+13,Good-for-you granola,others
+14,Cauliflower Polonaise soup,others
+15,Stollen spirals,others
+16,Caramelised apple & walnut strudel,dish
+17,Potato rosti cakes with sage leaves,others
+18,Stollen muffins,others
+19,Fruity fondue,others
+20,Spiced stollen plait,others
+21,Easy creamy coleslaw,dish
+22,Crunchy granola with berries & cherries,others
+23,Mulled wine cocktail,others
+24,Quick steak & mushroom stroganoff,dish
+25,Apple & blueberry blintzes,others
+26,Beef stroganoff with herby pasta,dish
+27,Easy Russian salad,others
+28,Meatball stroganoff,dish
+29,Stollen wreath cake,others
+30,Goat's cheese & bacon rosti,dish
+31,Polish apple cake (Szarlotka),others
+32,Cherry vodka,others
+33,Rosti Bolognese pie,dish
+34,Choc-cherry fudge torte with cherry sorbet,others
+35,Christmas spiced red cabbage,dish
+36,Beef schnitzel,dish
+37,Rosti lamb hotpot,dish
+38,Tropical treat,others
+39,Mushrooms paprikash,dish
+40,Lebkuchen,others
+41,Stollen wreath,others
+42,Goulash in a dash,dish
+43,Pork goulash with herby dumplings,dish
+44,Pumpkin & pecan strudel,others
+45,Quickie sausage goulash,dish
+46,Raspberry chocolate torte,others
+47,Gruyere & vegetable soup,others
+48,Inside-out chicken Kiev,dish
+49,Apfelstrudel sidecar,others
+50,"Pear, chocolate & marzipan strudel",others
+51,Good-for-you granola,others
+52,Raggmunk,dish
+53,Full of fibre,others
+54,Mince pie trees,others
+55,Inside-out chicken Kiev,dish
+56,Russian chicken & mushroom pies with soured cream & dill,dish
+57,Stollen spirals,others
+58,Rosti lamb hotpot,dish
+59,Smoked trout & horseradish pate,dish
+60,"Pear, chocolate & marzipan strudel",others
+61,Gravadlax temptation,dish
+62,Rosti Bolognese pie,dish
+63,Quickie sausage goulash,dish
+64,Sausages with braised cabbage & caraway,dish
+65,Scandi smoked salmon,dish
+66,Stollen wreath,others
+67,Lingonberry & ginger cheesecake pots,others
+68,"Smoked salmon, quinoa & dill lunch pot",dish
+69,Shukhi ¡V warm beetroot & mushroom salad,others
+70,Open mackerel sandwich with fennel slaw,dish
+71,Soured cream bundt cake with butter glaze,others
+72,Scandi smoked mackerel on rye,dish
+73,Scandi cheese & crackers,others
+74,German-style cheese & bacon pancakes,dish
+75,Goulash in a dash,dish
+76,Smoked salmon & watercress pinwheels,dish
+77,Swede temptation,others
+78,Lebkuchen,others
+79,Mini hasselbacks with dill,dish
+80,Scandi smoked salmon potatoes,dish
+81,Sweet balsamic pork with caraway slaw,dish
+82,Mini creamy mushroom pies,dish
+83,Creamy cucumber with gravadlax,dish
+84,Citrus-cured salmon gravadlax,dish
+85,Cured pollock with dill cream & radish salad,others
+86,Cauliflower Polonaise soup,others
+87,Double chocolate Easter Danish ,others
+88,Mushroom stroganoff,dish
+89,Mini schnitzels with garlic sauce,dish
+90,Paprika pork,dish
+91,Apfelstrudel sidecar,others
+92,Quick steak & mushroom stroganoff,dish
+93,Smoked trout pate & pitta crisps,dish
+94,Scandi-style sausage hash with pickled beetroot,dish
+95,Austrian hash,dish
+96,Danish pastries,others
+97,Oven-baked rosti cake,others
+98,"Pear, nut & blackberry bircher",others
+99,Potato & dill pancakes with gravadlax,dish
+100,Spiced stollen plait,others
+101,Blue cheese pasta,dish
+102,Spaghetti with fresh tomato sauce,dish
+103,Holiday pizzas,dish
+104,Clams with Sherry & Serrano ham,dish
+105,Speedy meatball stew,dish
+106,Green salad with olive dressing,others
+107,Greek-style roast chicken,dish
+108,Italian stuffed courgettes,dish
+109,Raspberry sangrillinis,others
+110,"Crostini with pea puree, rocket & broad beans",dish
+111,Barcelona baguette,dish
+112,Stuffed summer tomatoes,dish
+113,Quick tomato risotto,dish
+114,Crunchy mozzarella salad,others
+115,Marinated feta in thyme & chilli oil,others
+116,Apfelstrudel sidecar,others
+117,"Spiced bulghar, chickpea & squash salad",others
+118,Spinach rice,dish
+119,Spicy prawn pizzas,dish
+120,So-simple spaghetti Bolognese,dish
+121,One-pan Spanish fish stew,dish
+122,Taleggio tart with walnut pastry,others
+123,Baked cauliflower pizzaiola,dish
+124,Fresh lasagne with pesto,dish
+125,Mediterranean stuffed peppers,others
+126,Focaccia with pesto & mozzarella,dish
+127,Strawberry lemon sorbet,others
+128,Brussels & blue cheese pizza,dish
+129,Bresaola with rocket & artichokes,dish
+130,Summer courgetti & meatballs,dish
+131,"Polenta, roasted vegetables & peppered Parmesan crisps",dish
+132,Creamy cucumber with gravadlax,dish
+133,Gruyere & vegetable soup,others
+134,Sea bream in crazy water (Orata all¡¦acqua pazza),dish
+135,"Shaved fennel, courgette & orange salad",others
+136,Balsamic braised beef,dish
+137,Baked Swiss chard,dish
+138,Rainbow orzo salad,others
+139,Spanish meatball & butter bean stew,dish
+140,Pasta with chilli tomatoes & spinach,dish
+141,Melting-middle aubergine parcels,dish
+142,Torta del Nonna,others
+143,Butternut ricotta tart with fiery rocket salad,others
+144,Courgette & ricotta tart,others
+145,"Carrots with pine nuts, raisins & parsley",dish
+146,Sausage & herb stuffed courgettes,dish
+147,Tricolore tagliatelle ,dish
+148,Bulghar & spinach fritters with eggs & tomato chutney,others
+149,Griddled chicken with lemon & thyme ,dish
+150,"Bean, chickpea & feta salad",others
+151,Hot passion pina coladas,others
+152,"Parsnip, cranberry & chestnut loaf",others
+153,Hot salmon parcel,dish
+154,Caramel button cupcakes,others
+155,Ploughman¡¦s rolls,dish
+156,Chargrilled vegetable salad,others
+157,Lemon bars,others
+158,Fettuccine with beans & pancetta,dish
+159,Frosted carrot squares,others
+160,One-pot fish with black olives & tomatoes,dish
+161,Funny face cookies,others
+162,Earl Grey teacakes,others
+163,Devilled mackerel with potatoes & spinach,dish
+164,Skinny carrot fries,dish
+165,Dressed spring cabbage,dish
+166,Mustard-crusted breast of lamb,dish
+167,20-minute Fiorentina pizzas,dish
+168,"Mustard-buttered chicken with tarragon, peas & carrots",dish
+169,Mini Christmas cake,others
+170,Shimmering forest cake,others
+171,Sprout & chorizo carbonara,dish
+172,"Cheese, tomato & pesto tart",others
+173,Broccoli soup with crispy croutons & goat's cheese,others
+174,Pears in port with meringue cream,others
+175,Lily¡¦s lemon cupcakes,others
+176,Peppered plums with almond ice,others
+177,Ploughman¡¦s omelette,dish
+178,Mr McGregor¡¦s rabbit pie,dish
+179,Grilled lamb & potato crush,dish
+180,Apple tart 'Maman Blanc',others
+181,Turkey breast fingers with avocado dip,dish
+182,Grilled & marinated summer vegetables,dish
+183,Energy bites,others
+184,Winter vegetable pie,dish
+185,"Smoked haddock, spinach & potato cakes",dish
+186,"Spinach, bacon & white bean salad",others
+187,Potato pancakes,dish
+188,Fruit pots,others
+189,Trout en papillote,dish
+190,Tangy trout,dish
+191,Apricot conserve ,others
+192,Cauliflower & apple soup,others
+193,Plum & amaretti semifreddo,others
+194,Navarin d'agneau,dish
+195,Freaky finger red velvet cake,others
+196,Pancetta-wrapped turkey breast with herby lemon & pine nut stuffing,dish
+197,Almond biscuits,others
+198,Lollipop cake,others
+199,Alice in Wonderland wedding cookies,others
+200,Brummie bacon cakes,others
