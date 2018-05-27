@@ -69,8 +69,10 @@ edges point out from it).
 We filter 200 recipe to visualize the result from four Europe regions(Western Europe, Northern Europe, Central Europe, and Southern Europe. Eastern Europe do not have enough samples.)
 
 - ### Recipe-By-Recipe Co-Ingredient One-Mode Network
+For nodes, each node represents a recipe. For edges, or the relationship that two recipes share at least one ingredient (i.e. common ingredient). 
+
 #### Recipe-By-Recipe Network (area)
-For nodes, each node represents a recipe. For edges, or the relationship that two recipes share at least one ingredient (i.e. common ingredient). In Figure below, there are a few patterns that nodes in light blue gather together on the top right side. Besides, half of green nodes on the bottom left side, and for other two color of nodes, they distribute evenly in this network.
+In Figure below, there are a few patterns that nodes in light blue gather together on the top right side. Besides, half of green nodes on the bottom left side, and for other two color of nodes, they distribute evenly in this network.
 
 ![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure2.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.)")
 
@@ -96,20 +98,22 @@ ingredients almost play the same rule－ one is main ingredient and the other is
 ![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure6.png "Ingredient Network with Degree of node more than 15")
 
 - ### Ingredient-By-Recipe Two-Mode Network
+The nodes can be both recipe and ingredient, and the edges mean that one ingredient is used in a certain recipe. Therefore, there won’t be any edge among nodes of ingredients and among nodes of recipes; there will only be between a node of ingredient and a node of recipe. 
 
 #### Ingredient-By-Recipe Network (area)
-The nodes can be both recipe and ingredient, and the edges mean that one ingredient is used in a certain recipe. Therefore, there won’t be any edge among nodes of ingredients and among nodes of recipes; there will only be between a node of ingredient and a node of recipe. Moreover, we compute the in-degree and out-degree separately in four area. That is, we distinguish the 50s recipe from every area, and convert each area to an ingredient-by-ingredient matrix. 
+We compute the in-degree and out-degree separately in four area. That is, we distinguish the 50 recipe from every area, and convert each area to an ingredient-by-ingredient matrix. Next, we pick up the top 5 in-degree and out-degree ingredients to build main ingredient network and minor ingredient network. In Figure below, in main ingredient network (top 5 in-degree ingredients in each area), we surprisingly found that Southern Europe hardly share main ingredients with other area. 
 
-Next, we pick up the top 5 in-degree and out-degree ingredients to build main ingredient network and minor ingredient network. In Figure below, in main ingredient network (top 5 in-degree ingredients in each area), we surprisingly found that Southern Europe hardly share main ingredients with other area. 
+By Recipe-By-Recipe Network, there are a little dessert in Southern Europe, which cause the main ingredients are quite different from other areas. Moreover, if an ingredient link to two areas, these two areas have a relationship that use the same ingredient. We also found that Northern Europe share 4 of the top 5 ingredient to Central Europe. Besides, eggs act as main ingredients in 4 regions, but when they are used in Southern Europe, they are more likely to be made Omelet or Scrambled eggs. However, when eggs are used as main ingredient in Western Europe and Central Europe, they are probably used the eggs white to make cakes. Furthermore, we can find that most of the top 5 main ingredient in Western, Northern, and Central Europe are lots of ingredients to make dessert
 
-By Recipe Network, there are a little dessert in Southern Europe, which cause the main ingredients are quite different from other areas. Moreover, if an ingredient link to two areas, these two areas have a relationship that use the same ingredient. We also found that Northern Europe share 4 of the top 5 ingredient to Central Europe. Besides, eggs act as main ingredients in 4 regions, but when they are used in Southern Europe, they are more likely to be made Omelet or Scrambled eggs. However, when eggs are used as main ingredient in Western Europe and Central Europe, they are probably used the eggs white to make cakes. Furthermore, we can find that most of the top 5 main ingredient in Western, Northern, and Central Europe are lots of ingredients to make dessert
-
-In figure below, we used PageRank as centrality to build a common ingrdients network. Garlic, milk, potatoes, and eggs are shared, which means these ingredients are most likely to reach others. In other words, they could be compared to many ingredients than others. Therefore, these ingredients are necessary when making European cuisine.
+In Common Ingredient-By-Recipe Network (area) below, we used PageRank as centrality to build a common ingrdients network. Garlic, milk, potatoes, and eggs are shared, which means these ingredients are most likely to reach others. In other words, they could be compared to many ingredients than others. Therefore, these ingredients are necessary when making European cuisine.
 
 ![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure7.png "Ingredient-By-Recipe Network (area)")
 
-
 #### Ingredient-By-Recipe Network (category)
+
+In Main Ingredient-By-Recipe Network (area), we found that the milk and eggs which used most in almost four area. Here, in Main Ingredient-By-Recipe Network (category), we furthermore find that these two ingredients are only use when making dessert and soup. Moreover, tomatoes and garlic are shared by meal, salad and dish but only used in Southern Europe. This also because that there are few dessert in Southern Europe, the weight are enhance in main courses. In Minor Ingredient-By-Recipe Network (category), we found that butter could be used to make meal and not in salad. Olive oil would not be used to make dessert. Onions are only used to make meal, soup, and dish. In Common Ingredient-By-Recipe Network (category), the pattern looks like Main Ingredient-By-Recipe Network (category), because the main ingredient are more common than minor ingredients. Therefore, main ingredients could have a greater impact on centrality.
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure8.png "Ingredient-By-Recipe Network (category)")
 
 ## 4. Discussion
 
