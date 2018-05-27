@@ -39,6 +39,9 @@ For those quantifiers hard to measure (e.g. handful, pack, etc.) and without uni
 To sum up, we scrap the data from website, BBC Good Food.com, obtaining a really “dirty” dataset. With series of manually data processing, we finally acquire a dataset, whose rows are ingredients (total ingredients =236), columns are recipe (total recipes =200), and the values inside are all “many” or “few”, which can fit the requirement to construct the following network.
 
 - ### Building Networks
+With the ingredient-by-recipe matrix, we can typically construct three kinds of network－ an ingredient-by-recipe two-mode network (Table.2.), a recipe-by-recipeKNOWLEDGE DISCOVERY OF CUISINE USING NETWORK ANALYSIS 12 co-ingredient one-mode network (Table.3.), and an ingredient-by-ingredient co-recipe one-mode network (Table.4.)
+
+
 
 
 ## 3. Results
