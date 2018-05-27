@@ -1,5 +1,5 @@
 # Knowledge Discovery of Online Recipe Reviews Using Text Mining
-![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/cover.jpeg)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Text%20Mining/figures/cover.jpg)
 
 ## Abstract
 The goal is to discover and explore Europe recipe experience world. Therefore, this experiment is conducted to utilize critical incidence and K-means clustering analysis to create ontology. Firstly, collect recipe samples from four European regions to build the clusters of positive and negative recipe experience; however, there’s no special pattern in clusters for creating ontology. Secondly, build clusters of positive and negative recipe experience for Europe recipes; however, there’s just a little pattern for creating ontology. Finally, partitioning same samples into two categories, i.e. “Dish” and “Others” (dessert & salad & soup) of Europe recipes, and building 4 clusters of both positive and negative recipe experience and finding ideas to create ontology.
