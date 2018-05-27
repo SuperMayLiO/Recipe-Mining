@@ -69,13 +69,15 @@ edges point out from it).
 We filter 200 recipe to visualize the result from four Europe regions(Western Europe, Northern Europe, Central Europe, and Southern Europe. Eastern Europe do not have enough samples.)
 
 - ### Recipe-By-Recipe Co-Ingredient One-Mode Network
+#### Recipe-By-Recipe Network (area)
 For nodes, each node represents a recipe. For edges, or the relationship that two recipes share at least one ingredient (i.e. common ingredient). In Figure below, there are a few patterns that nodes in light blue gather together on the top right side. Besides, half of green nodes on the bottom left side, and for other two color of nodes, they distribute evenly in this network.
 
-![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure2.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.))")
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure2.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.)")
 
+#### Recipe-By-Recipe Network (category)
 Moreover, we divide recipes into five categories, then use the same as previous network, but only change the color to represent different courses, the main difference between dish and meal is that whether the course can be eaten without other food in a meal (e.g. “So-simple spaghetti Bolognese” is a meal and “Creamy cucumber with gravadlax” is a dish) . In Figure below, all recipes are to construct a recipe network and there are some clear patterns that same category of recipes may share more ingredient. For example, most of the desserts gather together on the bottom left, soups are in the center of the network, and salads are in the right of the network. However, the meals and dishes are hardly to distinguish, because they almost share the same ingredients when we cook both kinds of cuisine. Something interesting we find here is that there are few courses from Southern Europe are desserts (compare with Recipe Network with region).
 
-![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure3.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.))")
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure3.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.)")
 
 To explore relationship between recipes, we retain the edges whose nodes have at least more than a threshold. In Figure below, we delete repeated recipe (i.e. 23 of 200 recipes) and edges which less than a threshold of sharing ingredients, then build 6 network whose nodes share at least 3 to 8 ingredients from top left to bottom right. Here is another exciting pattern that desserts share most of their ingredients with the increasing of minimum links, so in the last picture, only shows the desserts share at least 8 ingredients
 
@@ -83,9 +85,31 @@ To explore relationship between recipes, we retain the edges whose nodes have at
 
 
 - ### Ingredient-By-Ingredient Co-Recipe One-Mode Network
+Nodes are ingredient; they are linked because they are used in the same recipe and the direct is from minor ingredient point to main ingredient, meaning that the minor ingredient plays a second role in the recipe, so the usage of minor ingredient is to serve with a plus effect to main ingredient. We use ingredient-by-ingredient network with direction to calculate the previously proposed indicators.
+
+
+In Figures below, vertex color means the purity of a node to be main ingredient or minor ingredient. In other words, the nodes in pink are main ingredients and nodes in red are minor ingredients. The vertex size means the times of an ingredient is used. On the other hand, in edges, the edge color in black means that among all used recipe, the two
+ingredients almost play the same rule－ one is main ingredient and the other is minor ingredient. The edge size means the times of two ingredient co-occur in recipes. Figures below are Ingredient Network with Degree of node more than 10 and 15. We can find that chicken, pork, beef, mushrooms, tomatoes, and potatoes are in color pink, so they are always main ingredients in recipe. On the other side, baking powder, fruit vinegar, nutmeg, olive oil, and lemon are always minor ingredient
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure5.png "Ingredient Network with Degree of node more than 10")
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure6.png "Ingredient Network with Degree of node more than 15")
 
 - ### Ingredient-By-Recipe Two-Mode Network
 
+#### Ingredient-By-Recipe Network (area)
+The nodes can be both recipe and ingredient, and the edges mean that one ingredient is used in a certain recipe. Therefore, there won’t be any edge among nodes of ingredients and among nodes of recipes; there will only be between a node of ingredient and a node of recipe. Moreover, we compute the in-degree and out-degree separately in four area. That is, we distinguish the 50s recipe from every area, and convert each area to an ingredient-by-ingredient matrix. 
+
+Next, we pick up the top 5 in-degree and out-degree ingredients to build main ingredient network and minor ingredient network. In Figure below, in main ingredient network (top 5 in-degree ingredients in each area), we surprisingly found that Southern Europe hardly share main ingredients with other area. 
+
+By Recipe Network, there are a little dessert in Southern Europe, which cause the main ingredients are quite different from other areas. Moreover, if an ingredient link to two areas, these two areas have a relationship that use the same ingredient. We also found that Northern Europe share 4 of the top 5 ingredient to Central Europe. Besides, eggs act as main ingredients in 4 regions, but when they are used in Southern Europe, they are more likely to be made Omelet or Scrambled eggs. However, when eggs are used as main ingredient in Western Europe and Central Europe, they are probably used the eggs white to make cakes. Furthermore, we can find that most of the top 5 main ingredient in Western, Northern, and Central Europe are lots of ingredients to make dessert
+
+In figure below, we used PageRank as centrality to build a common ingrdients network. Garlic, milk, potatoes, and eggs are shared, which means these ingredients are most likely to reach others. In other words, they could be compared to many ingredients than others. Therefore, these ingredients are necessary when making European cuisine.
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure7.png "Ingredient-By-Recipe Network (area)")
+
+
+#### Ingredient-By-Recipe Network (category)
 
 ## 4. Discussion
 
