@@ -1,5 +1,5 @@
 # Predict the average recipe rating on BBC Good Food- To improve quality of BBC Good Food recipes
-![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Supervised%20Learning/figures/cover.jpeg)
+![images](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Supervised%20Learning/figures/cover.JPG)
 
 - ## Executive Summary
 The primary stakeholder is BBC Good Food which is a recipe website related to BBC.   The problem is that it is not the most popular website since it does not appear on the first page when user searching in Google website by keyword as “recipe website”.  Hence, the business goal of this project is to improve the quality of recipes on the website. By doing so, we aim to attract more people to visit the website and the analytic goal of the project is to predict the average rating value of new recipe before publishing.
