@@ -56,7 +56,7 @@ Y=0.00289*Saturates+0.02035*Salt+0.00086*Total_time+(0.10653)*Dinner+0.12083*Sid
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table5.jpg)
 
 ### Method 4.Principal Component Regression (PCR)
-We constructed regression models using 2 principal components we chose by screeplot below as independent variables, trying to get less error. Additionally, in order to run this model, we installed a package “pls” in R ([link to R code](Recipe-Mining/Supervised Learning/code/Principal Component Regression.r)). Finally, we got SSE = 5720.424, RMS Error=1.51, and Aver. Error=0.0314.
+We constructed regression models using 2 principal components we chose by screeplot below as independent variables, trying to get less error. Additionally, in order to run this model, we installed a package “pls” in R ([link to R code](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/code/Principal%20Component%20Regression.r)). Finally, we got SSE = 5720.424, RMS Error=1.51, and Aver. Error=0.0314.
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/C.2.jpg)
 
 ## 5. Model Evaluation
