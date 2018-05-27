@@ -54,10 +54,11 @@ Both rows and columns are recipes. Because there is no direction in this network
 - ##### Ingredient-By-Ingredient Co-Recipe One-Mode Network 
 In Table below, both rows and columns are ingredients. With the direction, the  atrix may not be symmetric. The value in the matrix means the times of the following situation happen: the row ingredient is minor (few) and the column ingredient is main (many).
 
-![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table5.png "Ingredient-By-Ingredient Matrix with Direction (partial)")
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/table4.png "Ingredient-By-Ingredient Matrix with Direction (partial)")
 
 - ### Building Networks
 Not like recipe-by-recipe network, for ingredient-by-ingredient matrix with direction, we are going to calculate two kinds of centrality indicator to know the relationship between ingredients better:
+
 > ##### (1) PageRank. This algorithm is original used to evaluate the importance of website. If a website is cited (the website’s URL is posted on other’s website) more and more times, the website would become more and more popular. In other words, if a person random enter a website, then for the result of next step, the person have more probability to visit the most cited website. The same concept can be move to network analysis. That is, randomly select a node in the network to be a minor ingredient, which node would be more possible to be the main ingredient if the node keep finding the most possible main ingredient each step. link to the higher centrality nodes but less possible to link to the lower centrality nodes. In a word, the nodes with higher centrality would have smaller distance to all the other nodes because the most possible have linkage between two nodes is equivalent to (distance means the shortest path from a node to another).
 > ##### (2) In-degree Centrality. It is the number of a node being pointed by other nodes. In ingredient-by-ingredient network with direction, higher in-degree means that an ingredient is a main ingredient in the network (e.g. the maximum in-degree is tomatoes with 216 edges link to it).
 > ##### (3) Out-degree Centrality. Contrary to in-degree, out-degree centrality is the number of a node point out . In ingredient-by-ingredient network with direction, higher in-degree means that an ingredient can be a collation to lots of ingredients. That is, it could be a minor ingredient in the network (e.g. the maximum out-degree is olive oil with 142
@@ -65,9 +66,21 @@ edges point out from it).
 
 
 ## 3. Results
-We filter 200 recipe to visualize the result
+We filter 200 recipe to visualize the result from four Europe regions(Western Europe, Northern Europe, Central Europe, and Southern Europe. Eastern Europe do not have enough samples.)
 
 - ### Recipe-By-Recipe Co-Ingredient One-Mode Network
+For nodes, each node represents a recipe. For edges, or the relationship that two recipes share at least one ingredient (i.e. common ingredient). In Figure below, there are a few patterns that nodes in light blue gather together on the top right side. Besides, half of green nodes on the bottom left side, and for other two color of nodes, they distribute evenly in this network.
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure2.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.))")
+
+Moreover, we divide recipes into five categories, then use the same as previous network, but only change the color to represent different courses, the main difference between dish and meal is that whether the course can be eaten without other food in a meal (e.g. “So-simple spaghetti Bolognese” is a meal and “Creamy cucumber with gravadlax” is a dish) . In Figure below, all recipes are to construct a recipe network and there are some clear patterns that same category of recipes may share more ingredient. For example, most of the desserts gather together on the bottom left, soups are in the center of the network, and salads are in the right of the network. However, the meals and dishes are hardly to distinguish, because they almost share the same ingredients when we cook both kinds of cuisine. Something interesting we find here is that there are few courses from Southern Europe are desserts (compare with Recipe Network with region).
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure3.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.))")
+
+To explore relationship between recipes, we retain the edges whose nodes have at least more than a threshold. In Figure below, we delete repeated recipe (i.e. 23 of 200 recipes) and edges which less than a threshold of sharing ingredients, then build 6 network whose nodes share at least 3 to 8 ingredients from top left to bottom right. Here is another exciting pattern that desserts share most of their ingredients with the increasing of minimum links, so in the last picture, only shows the desserts share at least 8 ingredients
+
+![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure4.png "Recipe Network (yellow =Western Europe, green=Central Europe, blue = Northern European, light blue = Southern European.))")
+
 
 - ### Ingredient-By-Ingredient Co-Recipe One-Mode Network
 
