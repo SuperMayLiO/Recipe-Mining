@@ -116,7 +116,9 @@ In Main Ingredient-By-Recipe Network (area), we found that the milk and eggs whi
 ![alt text](https://github.com/SuperMayLiO/Recipe-Mining/blob/master/Social%20Network%20Analysis/figures/figure8.png "Ingredient-By-Recipe Network (category)")
 
 ## 4. Discussion
-
+We scrap data from BBC Good Food website, after a long procedure of analysis, finding that Southern Europe may be in a different food culture with other regions (Western, Northern, and Central Europe). In main ingredients, there are less ingredient shared by regions, except eggs and milk. That is quite trivial that European loves to eat diary no matter
+in desserts or dishes. On the other hand, olive oil, butter, and onions are more likely to serve as minor ingredients. However, butter do not serve as minor ingredient in Southern Europe because butter are used to make dessert and there are few dessert in Southern Europe. Nevertheless, there are some limitations in this paper. First, we can’t use a perfect way to clean the ingredient quantifier, and a fair ways to give ingredient weight so we can apply this work to a bigger scale of research. Secondly, the data are scrapped from website, even ifKNOWLEDGE DISCOVERY OF CUISINE USING NETWORK ANALYSIS 27 the website is convincing for European recipe, there are still some repeated recipe among different regions. Therefore, we should do more research to find mainstream recipes among countries. Last but not least, even though we give the fair metric, the ways people choosing ingredients are affected not only by weight but also by flavor, texture, price, agriculture etc. This would become a great work if we consider all these variables, therefore, we expect that
+we can deal with these step by step in the future!
 
 ## 5. References
 ### Ahn, Y., Ahnert, S., Bagrow, J., & Barabasi, A. (2011). Flavor network and the principles of food pairing. SCIENTIFIC REPORTS, 1-7, doi:10.1038/srep00196
