@@ -59,9 +59,7 @@ In Table below, both rows and columns are ingredients. With the direction, the  
 - ### Building Networks
 Not like recipe-by-recipe network, for ingredient-by-ingredient matrix with direction, we are going to calculate two kinds of centrality indicator to know the relationship between ingredients better:
 > ##### (1) PageRank. This algorithm is original used to evaluate the importance of website. If a website is cited (the website’s URL is posted on other’s website) more and more times, the website would become more and more popular. In other words, if a person random enter a website, then for the result of next step, the person have more probability to visit the most cited website. The same concept can be move to network analysis. That is, randomly select a node in the network to be a minor ingredient, which node would be more possible to be the main ingredient if the node keep finding the most possible main ingredient each step. link to the higher centrality nodes but less possible to link to the lower centrality nodes. In a word, the nodes with higher centrality would have smaller distance to all the other nodes because the most possible have linkage between two nodes is equivalent to (distance means the shortest path from a node to another).
-
 > ##### (2) In-degree Centrality. It is the number of a node being pointed by other nodes. In ingredient-by-ingredient network with direction, higher in-degree means that an ingredient is a main ingredient in the network (e.g. the maximum in-degree is tomatoes with 216 edges link to it).
-
 > ##### (3) Out-degree Centrality. Contrary to in-degree, out-degree centrality is the number of a node point out . In ingredient-by-ingredient network with direction, higher in-degree means that an ingredient can be a collation to lots of ingredients. That is, it could be a minor ingredient in the network (e.g. the maximum out-degree is olive oil with 142
 edges point out from it).
 
