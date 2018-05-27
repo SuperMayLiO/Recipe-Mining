@@ -38,7 +38,7 @@ We found that when the ingredient is fewer than 3.75, the rating value is centra
 
 ## 4. Data Mining Solution 
 ### Method 1.Regression Trees
-We tried running our data with prediction tree method to create model and we found that the most eight significant predictors were as follows: `kcalories`, `category_drink`, `category_condim`, `protein`, `cook time`, `fibre`, `sugar` and `saturates`. In addition, the performance was showing as Table below and also, the full tree was showing as (see Appendix C Figure C.1).
+We tried running our data with prediction tree method to create model and we found that the most eight significant predictors were as follows: `kcalories`, `category_drink`, `category_condim`, `protein`, `cook time`, `fibre`, `sugar` and `saturates`. In addition, the performance was showing as Table below and also, the full tree was showing as below.
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table3.jpg)
 
 
@@ -56,7 +56,7 @@ Y=0.00289*Saturates+0.02035*Salt+0.00086*Total_time+(0.10653)*Dinner+0.12083*Sid
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/table5.jpg)
 
 ### Method 4.Principal Component Regression (PCR)
-We constructed regression models using 2 principal components we chose by screeplot below as independent variables, trying to get less error. Additionally, in order to run this model, we installed a package “pls” in R (R codes in Appendix C). Finally, we got SSE = 5720.424, RMS Error=1.51, and Aver. Error=0.0314.
+We constructed regression models using 2 principal components we chose by screeplot below as independent variables, trying to get less error. Additionally, in order to run this model, we installed a package “pls” in R ([link to R code](Recipe-Mining/Supervised Learning/code/Principal Component Regression.r)). Finally, we got SSE = 5720.424, RMS Error=1.51, and Aver. Error=0.0314.
 ![images](https://github.com/mayritaspring/Recipe-Mining/blob/master/Supervised%20Learning/figures/C.2.jpg)
 
 ## 5. Model Evaluation
